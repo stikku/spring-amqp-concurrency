@@ -23,4 +23,4 @@ single active consumer queue. Message processing has a 10-second sleep for ease 
     * IDE shutdown button. Alternative on linux: `ps aux | grep receiver` to get process id. `kill -INT <process_id>`
 7. Notice how second instance waits for first instance to complete its local messages before it starts processing.
 
-All messages are processed in order. No bug detected.
+Message order is maintained. No bug detected.
